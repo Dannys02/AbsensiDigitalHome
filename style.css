@@ -241,6 +241,34 @@ body {
   color: var(--light);
 }
 
+@media (max-width: 768px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem 1rem;
+  }
+  
+  .container-hero {
+    width: 100%;
+    align-items: center;
+  }
+  
+  .container-hero p {
+    text-align: center;
+  }
+  
+  .second-container-hero {
+    display: none;
+  }
+  
+  .cta-button {
+    padding: 0.2rem 1rem;
+    display: flex;
+    align-items: center;
+  }
+}
+
 /* Features Section */
 .features {
   padding: 5rem 2rem;
@@ -262,6 +290,18 @@ body {
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+@media (max-width: 1280px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .features-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .wrapper-card {
