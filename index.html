@@ -2,87 +2,93 @@
 <html lang="id">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AbsensiKu - Sistem Absensi Digital Modern</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <!-- Header -->
-  <!--<header>
-    <nav class="navbar">
-      <div class="logo">
-        <span class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></span>
-        <span>AbsensiKu</span>
-      </div>
-      <div class="nav-links">
-        <a href="#home">Beranda</a>
-        <a href="#features">Fitur</a>
-      </div>
-      <button class="mobile-menu-btn">☰</button>
-    </nav>
-  </header>-->
-  
   <!-- Hero Section -->
   <section class="hero" id="home">
     <div class="container-hero">
       <h1 class="from-left" style="transition-delay: 0.2s">AbsensiKu</h1>
-      <p class="from-left" style="transition-delay: 0.4s;">
-        <span class="highlight">Sistem Absensi Digital Modern</span> untuk Sekolah. Kelola kehadiran siswa dengan mudah menggunakan teknologi <span class="highlight">pengenalan wajah</span> dan <span class="highlight">QR code</span>. Cepat, akurat, dan efisien.
+      <p class="from-left" style="transition-delay: 0.4s">
+        <span class="highlight">Sistem Absensi Digital Modern</span> untuk
+        Sekolah. Kelola kehadiran siswa dengan mudah menggunakan teknologi
+        <span class="highlight">pengenalan wajah</span> dan
+        <span class="highlight">QR code</span>. Cepat, akurat, dan efisien.
       </p>
       
-      <div class="package-main-btn from-left" style="transition-delay: 0.6s;">
-        <a href="#features" class="cta-button delay-2">Mulai Sekarang</a>
-        <a style="background: transparent; border: 2px solid white;" href="#features" id="cta-buttons" class="cta-button delay-2">Pelajari lebih lanjut</a>
+      <div class="package-main-btn from-left" style="transition-delay: 0.6s">
+        <a href="#features" class="cta-button">Mulai Sekarang</a>
+        <a href="#features" id="cta-buttons">Pelajari lebih lanjut</a>
       </div>
-      
     </div>
     <div class="second-container-hero">
       
-      <img class="img-man" src="assets/man.png" alt="Man">
-      <img class="img-phone" src="assets/phone.png" alt="Handphone">
-      <img class="img-pot" src="assets/pot.png" alt="Pot">
+      <div class="float-img">
+        <img class="img-man" src="assets/man.png" alt="Man" />
+      </div>
+      
+      <div class="float-img">
+        <img class="img-phone" src="assets/phone.png" alt="Handphone" />
+      </div>
+      
+      <div class="float-img">
+        <img class="img-pot" src="assets/pot.png" alt="Pot" />
+      </div>
       
     </div>
   </section>
   
   <!-- Features Section -->
   <section class="features" id="features">
-    <h2 class="section-title">Fitur Unggulan</h2>
+    <h2 class="section-title from-bottom">Fitur Unggulan</h2>
     <div class="features-grid">
-      
       <div class="wrapper-card">
-        <div class="animation-border"></div>
-        <div class="feature-card">
+        <div class="animation-border from-bottom-rotate" style="transition-delay: 1s;"></div>
+        <div class="feature-card from-bottom" style="transition-delay: 0s;">
           <div class="feature-icon"><i class="fas fa-id-card"></i></div>
           <h3>Verifikasi Wajah</h3>
-          <p>Sistem pengenalan wajah canggih untuk memastikan keaslian identitas siswa dengan akurasi tinggi.</p>
+          <p>
+            Sistem pengenalan wajah canggih untuk memastikan keaslian
+            identitas siswa dengan akurasi tinggi.
+          </p>
         </div>
       </div>
       
-      
       <div class="wrapper-card">
-        <div class="animation-border"></div>
-        <div class="feature-card">
+        <div class="animation-border from-bottom-rotate" style="transition-delay: 1.2s;"></div>
+        <div class="feature-card from-bottom" style="transition-delay: 0.2s;">
           <div class="feature-icon"><i class="fa-solid fa-qrcode"></i></div>
           <h3>QR Code Scanner</h3>
-<p>Absensi cepat dan akurat melalui pemindaian QR code unik untuk setiap siswa atau kelas dengan teknologi terbaru.</p>        </div>
-      </div>
-      
-      <div class="wrapper-card">
-        <div class="animation-border"></div>
-        <div class="feature-card delay-3">
-          <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
-          <h3>Laporan Real-time</h3>
-          <p>Pantau kehadiran siswa secara real-time dengan dashboard yang informatif dan mudah dipahami.</p>
+          <p>
+            Absensi cepat dan akurat melalui pemindaian QR code unik untuk
+            setiap siswa atau kelas dengan teknologi terbaru.
+          </p>
         </div>
       </div>
       
       <div class="wrapper-card">
-        <div class="animation-border"></div>
-        <div class="feature-card delay-4">
+        <div class="animation-border from-bottom-rotate" style="transition-delay: 1.4s;"></div>
+        <div class="feature-card from-bottom" style="transition-delay: 0.4s;">
+          <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+          <h3>Laporan Real-time</h3>
+          <p>
+            Pantau kehadiran siswa secara real-time dengan dashboard yang
+            informatif dan mudah dipahami.
+          </p>
+        </div>
+      </div>
+      
+      <div class="wrapper-card">
+        <div class="animation-border from-bottom-rotate" style="transition-delay: 1.6s;"></div>
+        <div class="feature-card from-bottom" style="transition-delay: 0.6s;">
           <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
           <h3>Keamanan Terjamin</h3>
           <p>Data siswa terenskripsi dan tersimpan dengan aman</p>
@@ -90,43 +96,43 @@
       </div>
       
       <div class="wrapper-card">
-        <div class="animation-border"></div>
-        <div class="feature-card delay-5">
-          <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+        <div class="animation-border from-bottom-rotate" style="transition-delay: 1.8s;"></div>
+        <div class="feature-card from-bottom" style="transition-delay: 0.8s;">
+          <div class="feature-icon"><i class="fas fa-rocket"></i></div>
           <h3>Proses Cepat</h3>
           <p>Absensi dalam hitungan detik, tanpa antrian panjang</p>
         </div>
       </div>
-      
     </div>
   </section>
   
   <!-- CTA Section -->
   <section class="cta-section" id="contact">
-    <h2 class=>Siap Mengubah Sistem Absensi Sekolah Anda?</h2>
-    <p class="delay-1">Bergabung dengan ratusan sekolah yang telah menggunakan AbsensiKu untuk mengelola kehadiran dengan lebih efektif.</p>
-    <div class="cta-buttons delay-2">
+    <h2 class="from-bottom">Siap Mengubah Sistem Absensi Sekolah Anda?</h2>
+    <p class="from-bottom">
+      Bergabung dengan ratusan sekolah yang telah menggunakan AbsensiKu untuk
+      mengelola kehadiran dengan lebih efektif.
+    </p>
+    <div class="cta-buttons">
+      
       <a href="#" class="cta-button">Coba Gratis</a>
-      <a href="#" id="cta-buttons" class="cta-button secondary">Hubungi Kami</a>
+      <a href="#" id="cta-buttons">Hubungi Kami</a>
+      
     </div>
   </section>
   
   <!-- Footer -->
   <footer>
-    <div class="footer-content">
-      <div class="footer-logo">AbsensiKu</div>
-      <div class="footer-links">
-        <a href="#home">Beranda</a>
-        <a href="#features">Fitur</a>
-        <a href="#how-it-works">Cara Kerja</a>
-        <a href="#testimonials">Testimoni</a>
-        <a href="#contact">Kontak</a>
-      </div>
-      <p class="copyright">&copy; 2023 AbsensiKu. Semua hak dilindungi.</p>
-    </div>
+    <p class="copyright">&copy; 2023 AbsensiKu. Semua hak dilindungi.</p>
+    <p>
+      <a class="a-footer" style="text-decoration: none; transition: all 0.3s" class="copyright" href="">Terms & Conditions</a>
+      <span>|</span>
+      <a class="a-footer" style="text-decoration: none; transition: all 0.3s" class="copyright" href="">Privacy Policy</a>
+    </p>
   </footer>
   
   <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

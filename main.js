@@ -4,7 +4,7 @@ if (menuBtn && navLinks) {
   menuBtn.addEventListener('click', () => navLinks.classList.toggle('active'));
 }
 
-const fadeElements = document.querySelectorAll('.img-man, .img-phone, .img-pot, .from-left');
+const fadeElements = document.querySelectorAll('.img-man, .img-phone, .img-pot, .from-left, .from-bottom, .from-bottom-rotate');
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -26,4 +26,30 @@ const observer = new IntersectionObserver((entries) => {
 
 fadeElements.forEach((element) => {
   observer.observe(element);
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const ctaButton = document.querySelector('.cta-button');
+  
+  ctaButton.addEventListener('click', function(e) {
+    e.preventDefault();
+    
+    // Tampilkan SweetAlert
+    Swal.fire({
+      title: 'Halaman Selanjutnya Akan Dimuat',
+      text: 'Menggunakan library SweetAlert untuk notifikasi yang menarik',
+      icon: 'info',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Lanjutkan ke Register',
+      cancelButtonText: 'Batal'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        // Arahkan ke halaman register
+        // Ganti URL berikut dengan halaman register yang sebenarnya
+        window.location.href = 'register.html';
+      }
+    });
+  });
 });
