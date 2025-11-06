@@ -292,7 +292,7 @@ body {
   margin: 0 auto;
 }
 
-@media (min-width: 1280px) {
+@media (max-width: 1200px) {
   .features-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -468,43 +468,4 @@ footer {
 
 .a-footer:hover {
   color: yellow;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
-    flex-direction: column;
-    padding: 1rem 2rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-  
-  .nav-links.active {
-    display: flex;
-  }
-  
-  .mobile-menu-btn {
-    display: block;
-  }
-  
-  .hero h1 {
-    font-size: 2.5rem;
-  }
-  
-  .hero p {
-    font-size: 1.1rem;
-  }
-  
-  .section-title {
-    font-size: 2rem;
-  }
-  
-  .cta-section h2 {
-    font-size: 2rem;
-  }
 }
