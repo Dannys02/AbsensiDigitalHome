@@ -4,7 +4,7 @@ if (menuBtn && navLinks) {
   menuBtn.addEventListener('click', () => navLinks.classList.toggle('active'));
 }
 
-const fadeElements = document.querySelectorAll('.img-man, .img-phone, .img-pot, .from-left, .from-bottom, .from-bottom-rotate');
+const fadeElements = document.querySelectorAll('.float-img.man, .float-img.phone, .float-img.pot, .from-left, .from-bottom');
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
